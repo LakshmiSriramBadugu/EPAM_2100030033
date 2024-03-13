@@ -1,0 +1,21 @@
+package com.epam.st;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Welcome
+{
+    public static void main(String[] args)
+    {
+        System.out.println("Welcome  ");
+        WebDriver driver;
+        WebDriverManager.edgedriver().setup();
+        driver= new EdgeDriver();
+        driver.get("https://facebook.com");
+//        driver.quit();
+
+
+    }
+}
